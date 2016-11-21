@@ -1,4 +1,7 @@
 FROM nginx
 
 COPY public /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY config /etc/nginx
+
+EXPOSE 80
+
